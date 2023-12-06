@@ -1,0 +1,20 @@
+{
+    "version": "2.0.0",
+    "taskts" : [
+        {
+            "type" : "shell",
+            "label": "C/C++: g++ build active file",
+            "command": "/usr/bin/g++",
+            "args": ["-g", "${file}" , "-o", "${fileDirname}/${fileBasenameNoExtension}", "-std=c++11"],
+            "options": {
+                "cwd": "${workspaceFolder}"
+            },
+            "problemsMatcher": ["$gcc"],
+            "group":{
+                "kind":"build",
+                "isDefault":true
+            
+            }
+        }
+    ]
+}
